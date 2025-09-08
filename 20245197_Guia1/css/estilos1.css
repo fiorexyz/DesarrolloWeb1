@@ -1,0 +1,30 @@
+/*Realice las modificaciones necesarias para que el ejemplo 1 de la guía no utilice estilos definidos en el
+mismo documento HTML sino que las reglas de estilo estén en un archivo externo llamado estilos1.css*/
+
+body{
+    background-color: lightblue;
+}
+
+div{
+    font-size: 20px;
+}
+
+h2{
+    text-decoration: underline; color: white;
+}
+
+.parrafo1{
+    color:navy;
+}
+
+.parrafo2{
+    text-transform: uppercase; text-align: justify;
+}
+
+.parrafo3{
+    font-size: 12px;
+}
+
+.parrafo3 span{
+    font-style: italic;
+}

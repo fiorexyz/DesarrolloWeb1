@@ -1,0 +1,57 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #000000;}
+
+/* Encabezado */
+header {
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo-principal {
+    font-size: 2.5em;
+}
+
+/* películas */
+.pelicula {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.titulo-pelicula {
+    color: #000000;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.imagen-pelicula {
+    display: block;
+    width: 300px;
+    height: 400px;
+    background-color: #ddd; /* Fondo gris mientras no haya imagen */
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.descripcion {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: white;
+   
+}
