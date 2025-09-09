@@ -1,57 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Guía – Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - Índice de Guías</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #F5E9E2;
+            font-family: 'Arial', sans-serif;
+            color: black;
+        }
+        
+        .folder {
+            transition: transform 0.3s ease;
+            height: fit-content;
+            margin: 20px 50px 20px 50px;
+        }
+
+        .folder:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-bg {
+          background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+          height: 200px;
+          position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .titulo{
+          margin: 10px;
+          color: black;
+          text-align: center;
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+        footer{
+          background-color: black;
+        }  
+    </style>
 </head>
-<body>
-  <header id="top">
-    <h1 class="titulo"> Angie Fiorella Alberto Guzmán |Guía de trabajo 1 | Desarrollo Web</h1>
-  </header>
 
-  <main class="contenedor">
-    <section id="estilos embebidos">
-      <h2>Estilos Embebidos</h2>
-      <div class="grid">
-        <a class="card" href="20245197_Guia1/estilos_embebidos.html">
-          <p>Link estilos_embebidos</p>
-        </a>
-       
-      </div>
-    </section>
+<body class="text-white">
+    <header class="hero-bg">
+        <div class="hero-overlay">
+            <div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">GUÍAS DESARROLLO WEB</h1>
+                <p class="text-xl">Angie Fiorella Alberto Guzmán</p>
+            </div>
+        </div>
+    </header>
 
-    <section id="ejemplo 2">
-      <h2>Ejemplo 2</h2>
-      <div class="grid">
-        <a class="card" href="20245197_Guia1/ejemplo2.html">
-          <p>Link ejemplo2</p>
-        </a>
-      </div>
-    </section>
+    <main class="contenedor">
+        <h2 class="titulo">Guías del Curso</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+            <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 1</h3>
+              <button onclick="toggleGuia1()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+              <div id="guia1Archivos" class="mt-4 hidden space-y-2">
+              <a href="20245197_Guia1/ejemplo2.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                <span class="text-black font-medium">ejemplo2.html</span>
+              </a>
+              <a href="20245197_Guia1/estilos_embebidos.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                <span class="text-black font-medium">estilos_embebidos.html</span>
+              </a>
+              <a href="20245197_Guia1/pagina_web_personal.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                <span class="text-black font-medium">pagina_web_personal.html</span>
+              </a>
+              <a href="20245197_Guia1/paises.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                <span class="text-black font-medium">paises.html</span>
+              </a>
+              </div>
+            </div>
+        </div>
+        <script>
+          function toggleGuia1() {
+              const archivos = document.getElementById('guia1Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
 
-    <section id="paises">
-      <h2>Paises</h2>
-      <div class="grid">
-        <a class="card" href="20245197_Guia1/paises.html">
-          <p>Link paises</p>
-        </a>
-      </div>
-    </section>
+        <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 2</h3>
+              <button onclick="toggleGuia2()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+              </div>
+        </div>
+        <script>
+          function toggleGuia2() {
+              const archivos = document.getElementById('guia2Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
 
-     <section id="mi sitio web 1">
-      <h2>Pagina personal</h2>
-      <div class="grid">
-        <a class="card" href="20245197_Guia1/pagina_web_personal.html">
-          <p>Link peliculas favoritas</p>
-        </a>
-      </div>
-    </section>
-  </main>
+        <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 3</h3>
+              <button onclick="toggleGuia3()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+              </div>
+        </div>
+        <script>
+          function toggleGuia3() {
+              const archivos = document.getElementById('guia3Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
 
-  <footer class="footer">
-    <p>&copy; <span id="anio"></span> Angie Fiorella Alberto Guzmán<a href="#top"> Volver arriba</a></p>
-  </footer>
+    </main>
+
+    <footer>
+        
+    </footer>
 
 </body>
 </html>
+</content>
+</create_file>
