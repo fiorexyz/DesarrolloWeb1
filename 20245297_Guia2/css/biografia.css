@@ -1,0 +1,111 @@
+
+header{
+    background-color: #0d1321;
+    height: 100px;
+}
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav a{
+    color: #006466;
+    display: inline;
+    list-style: none;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    padding: 35px;
+    text-align: center;
+}
+
+.presentacion{
+    margin: 15px 150px 0px;
+    color: aliceblue;
+    display: flex;
+}
+
+.presentacion h3{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    margin-top: 100px;
+}
+
+.presentacion h1{
+    margin: 0%;
+    font-size: 150px;
+    font-family: "Chewy";
+    margin-bottom: 50px;
+}
+
+.foto{
+    width: 100px;
+    height: 200px;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.foto img{
+    width: 500px;
+    height: fit-content;
+    
+}
+body{
+    background-color: #0c111e;
+}
+
+h3{
+    color: #006466;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 150px;
+    background-color: #151e35;
+    margin-bottom: 0%;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.biografia{
+    display: inline-flex;
+    background-color: #151e35;
+    width: auto;
+}
+
+.biografia .texto{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 155px 10px 130px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.biografia img{
+    margin: 65px 0 65px 150px;
+    width: 700px;
+    height: fit-content;
+
+}
+
+.presentacion h3{
+    background-color: transparent;
+}
+
+footer{
+    background-color: #0d1321;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
