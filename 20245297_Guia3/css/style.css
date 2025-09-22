@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+header{
+    background: #16A085;
+    height: 130px;
+    overflow: hidden;
+}
+
+footer{
+    margin-top: 20px;
+    background: #16A085;
+    height: 50px;
+}
+
+header div, footer div{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h1{
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    overflow: hidden;
+    margin: 0.5%;
+    border: 2px dashed #16A085;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*tengo que hacer que floten a la izquierda*/
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto;
+    display: block;
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+section article:nth-child(2){
+    background-color: rgba(70, 130, 180, 0.9);
+    position: relative;
+    left: 100px;
+    top: 50px;
+    /*visibility: hidden;*/
+    display: none;
+}
+
+/* Se mueve hacia la derecha y hacia abajo porque lo que estamos pidiendo al poner top y left es que se den esos pixeles mas de espacio*/
+
+/*Las demas cajas se han desplazdp igual hacia derecha y hacia abajo*/
+
+/*. A partir de los resultados obtenidos, responda ¿Cuál es la diferencia entre ocultar los elementos 
+ocupando display: none y visibility: hidden
+RESPUESTA: con NONE el elemento no se muestra y no quita espacio en la pagina
+con hidden, si se mantiene ocupando espacio*/
+
+
+
+
+
