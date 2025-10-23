@@ -144,6 +144,33 @@
           }
         </script>
 
+        <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 4</h3>
+              <button onclick="toggleGuia4()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+                <div id="guia4Archivos" class="mt-4 hidden space-y-2">
+                <a href="20245297_Guia4/mediaqueries.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">mediaqueries.html</span>
+                </a>
+                <a href="20245297_Guia4/index_viajes.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">index_viajes.html</span>
+                </a>
+                <a href="20245297_Guia4/planes.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">planes.html</span>
+                </a>
+                <a href="20245297_Guia4/galeria.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">galeria.html</span>
+                </a>
+                </div>
+              </div>
+        </div>
+        <script>
+          function toggleGuia4() {
+              const archivos = document.getElementById('guia4Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
+
 
 
 
