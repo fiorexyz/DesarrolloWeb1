@@ -3,57 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso - Índice de Guías</title>
+    <title>Portafolio - Desarrollo Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            background-color: #F5E9E2;
-            font-family: 'Arial', sans-serif;
-            color: black;
-        }
-        
-        .folder {
-            transition: transform 0.3s ease;
-            height: fit-content;
-            margin: 20px 50px 20px 50px;
-        }
-
-        .folder:hover {
-            transform: scale(1.05);
-        }
-
-        .hero-bg {
-          background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-          height: 200px;
-          position: relative;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .titulo{
-          margin: 10px;
-          color: black;
-          text-align: center;
-          font-size: 30px;
-          font-weight: 700;
-        }
-
-        footer{
-          background-color: black;
-        }  
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="text-white">
@@ -62,12 +14,63 @@
             <div>
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">GUÍAS DESARROLLO WEB</h1>
                 <p class="text-xl">Angie Fiorella Alberto Guzmán</p>
+                <p>Carnet: 20245297</p>
             </div>
         </div>
     </header>
 
     <main class="contenedor">
-        <h2 class="titulo">Guías del Curso</h2>
+
+      <div class="foto-perfil">
+        <img src="img_index/Imagen de WhatsApp 2025-10-26 a las 16.20.19_10414522.jpg" alt="Foto de perfil">
+      </div>
+  
+      <!--sobre mí-->
+      <section class="sobreMi">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy estudiante de la Escuela Superior de Economía y Negocios. Durante la materia de 
+          <strong>Desarrollo Web</strong> he aprendido los fundamentos del diseño y construcción de sitios Web
+          aplicando HTML, CSS, Flexbox, MediaQueries etc.
+        </p>
+      </section>
+
+      <!--Sobre la materia-->
+      <section class="materia">
+        <h2>Sobre la materia</h2>
+        <p>
+          La materia de Desarrollo Web tiene como objetivo introducir a los estudiantes
+          en la creación de interfaces web utilizando herramientas como HTML5, CSS3, JavaScript y 
+          herramientas responsive como TailWind y Bootstrap. Todo esto mediante guías prácticas donde se desarrollan habilidades en 
+          estructura semántica, estilos adaptativos y diseño responsivo.
+        </p>
+
+      </section>
+
+      <!-- FODA -->
+    <section class="foda">
+      <h2>FODA sobre mi desempeño</h2>
+      <div class="foda-grid">
+        <div class="foda-item fortaleza">
+          <h4>Fortalezas</h4>
+          <p>He mejorado mi manera de estructurar sitios web.</p>
+        </div>
+        <div class="foda-item oportunidad">
+          <h4>Oportunidades</h4>
+          <p>Aprendí herramientas de diseño que me ayudaran en mi carrera </p>
+        </div>
+        <div class="foda-item debilidad">
+          <h4>Debilidades</h4>
+          <p>Debo seguir trabajando en la estructura de los códigos</p>
+        </div>
+        <div class="foda-item amenaza">
+          <h4>Amenazas</h4>
+          <p>La carga de otras materias a veces dificultan mantener una práctica constante.</p>
+        </div>
+      </div>
+    </section>
+
+      <!-- Guías-->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
             <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
@@ -170,9 +173,6 @@
               archivos.classList.toggle('hidden');
           }
         </script>
-
-
-
 
     </main>
 

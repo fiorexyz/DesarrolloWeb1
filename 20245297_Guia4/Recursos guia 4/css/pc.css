@@ -98,34 +98,54 @@ font-size: 0.95em;
 960 px*/ 
 } 
 
-/*   CONTENIDO DE LA PAGINA INDEX */ 
- 
-.plan{ 
- width: 26.7%; /* 258/960= 27%*/ 
- padding: 2%; /* 20/960=2%*/ 
- margin: 30px 1.5%; 
- background-color:white; 
- border: solid 1px black; 
- border-radius: 10px; 
- float: left; 
- text-align: justify; 
-} 
- 
-.plan img{ 
- width: 100%; 
-} 
- 
-/* Primer div, cuarto div,... */ 
-#contenido div:nth-child(3n+1){ 
- margin-left: 0px; 
- 
-} 
- 
-/* Tercer div, sexto div, .... */ 
-#contenido div:nth-child(3n){ 
- margin-right: 0px; 
-} 
- 
+/*CONTENIDO DE LA PAGINA INDEX*/
+.plan{
+    width: 26.7%; /* 258/960= 27%*/ 
+    padding: 2%; /* 20/960=2%*/ 
+    margin: 30px 1.5%; 
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    float: left;
+    text-align: justify;
+}
+
+#contenido div:nth-child(3n){
+    margin-left: 0px;
+}
+
+#contenido div:nth-child(3n+1){
+    margin-right: 0px;
+}
+
+.plan img{
+    width: 100%;
+}
+
+.boton{
+    background-color: #464d52;
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: .9em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.boton:hover{
+    background: #5077c7;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+
 /*   CONTENIDO DE LA PAGINA PLANES */ 
  
 .planes{ 
