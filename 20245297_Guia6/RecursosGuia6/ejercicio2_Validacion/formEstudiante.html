@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Estudiante</title>
+
+    <!--Aqui agrego el mini diseño-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            padding: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            background: #3a7afe;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0053ff;
+        }
+
+        #resultado {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ffffff;
+            border-left: 5px solid #3a7afe;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            color: #333;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Formulario de Estudiante</h2>
+
+    <form id="formEstudiante">
+
+        <label>Carnet (AB001):</label><br>
+        <input type="text" id="carnet"><br><br>
+
+        <label>Nombre completo:</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label>DUI (########-#):</label><br>
+        <input type="text" id="dui"><br><br>
+
+        <label>NIT (####-######-###-#):</label><br>
+        <input type="text" id="nit"><br><br>
+
+        <label>Fecha nacimiento (dd/mm/yyyy):</label><br>
+        <input type="text" id="fecha"><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="text" id="correo"><br><br>
+
+        <label>Edad (solo números):</label><br>
+        <input type="text" id="edad"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <!-- Archivo js -->
+    <script src="validar.js"></script>
+
+</body>
+</html>

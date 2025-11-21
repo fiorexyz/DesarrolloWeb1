@@ -191,6 +191,31 @@
               archivos.classList.toggle('hidden');
           }
         </script>
+
+        <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 6</h3>
+              <button onclick="toggleGuia6()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+                <div id="guia6Archivos" class="mt-4 hidden space-y-2">
+                <a href="20245297_Guia6/RecursosGuia6/index.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">Funciones y eventos en JS</span>
+                </a>
+                <a href="20245297_Guia6/RecursosGuia6/indexFunciones.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">Index_funciones</span>
+                </a>
+                <a href="20245297_Guia6/RecursosGuia6/ejercicio2_Validacion/formEstudiante.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">Ejercicio 2: Formulario de estudiantes validado</span>
+                </a>
+                </div>
+              </div>
+        </div>
+        <script>
+          function toggleGuia6() {
+              const archivos = document.getElementById('guia6Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
+
     </main>
 
 </body>
