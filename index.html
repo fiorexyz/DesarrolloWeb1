@@ -216,6 +216,23 @@
           }
         </script>
 
+         <div class="folder bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl cursor-pointer">
+              <div class="text-center">
+              <h3 class="text-xl font-bold">Guía 7</h3>
+              <button onclick="toggleGuia7()" class="inline-block mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Abrir Guía</button>
+                <div id="guia7Archivos" class="mt-4 hidden space-y-2">
+                <a href="20245297_Guia7/RecursosGuia7/index.html" class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-2 hover:bg-gray-200 transition">
+                  <span class="text-black font-medium">Document Object Model</span>
+                </a>
+                </div>
+              </div>
+        </div>
+        <script>
+          function toggleGuia7() {
+              const archivos = document.getElementById('guia7Archivos');
+              archivos.classList.toggle('hidden');
+          }
+        </script>
     </main>
 
 </body>
